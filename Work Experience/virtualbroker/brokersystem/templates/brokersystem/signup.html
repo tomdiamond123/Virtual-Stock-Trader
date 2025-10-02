@@ -1,0 +1,52 @@
+{% extends "brokersystem/base.html" %}
+
+{% block content %}
+<div class="form-page">
+<main class="form-card" role="main">
+    <h1 class="form-title">Create your account</h1>
+    <p class="form-sub">Start with $10,000 in virtual cash — no credit card required.</p>
+
+    {% if form.non_field_errors %}
+      <ul class="errorlist">
+        {% for e in form.non_field_errors %}<li>{{ e }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+
+    <form method="post" novalidate>
+      {% csrf_token %}
+
+      <div class="form-fields">
+        <div class="form-field">
+          <label for="id_first_name">First name</label>
+          <input class="input" id="id_first_name" type="text" name="first_name" placeholder="John" required>
+          {{ form.first_name.errors }}
+        </div>
+
+        <div class="form-field">
+          <label for="id_last_name">Last name</label>
+          <input class="input" id="id_last_name" type="text" name="last_name" placeholder="Doe" required>
+          {{ form.last_name.errors }}
+        </div>
+
+        <div class="form-field">
+          <label for="id_email">Email</label>
+          <input class="input" id="id_email" type="email" name="email" placeholder="you@example.com" required>
+          {{ form.email.errors }}
+        </div>
+
+        <div class="form-field">
+          <label for="id_password">Password</label>
+          <input class="input" id="id_password" type="password" name="password" placeholder="••••••••" required>
+          {{ form.password.errors }}
+        </div>
+
+      </div>
+
+      <div class="form-actions">
+        <a class="link-clickable" href="{% url 'login' %}">Already have an account?</a>
+        <button class="btn btn-primary">Create account</button>
+      </div>
+    </form>
+  </main>
+</div>
+{% endblock %}
