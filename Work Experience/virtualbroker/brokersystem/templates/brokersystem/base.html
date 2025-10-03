@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VirtualBroker — Discover how trading works (without the risk)</title>
+  <meta name="description" content="Practice trading risk‑free with VirtualBroker. Start with virtual cash, follow live‑feeling prices, and track your portfolio safely." />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'brokersystem/styles.css' %}?v=3" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="{% url 'home' %}"><span class="brand-badge" aria-hidden="true"></span><span>VirtualBroker</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        {% if user.is_authenticated %}
+          <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+          <span class="nav-user">Hi, {{ user.first_name|default:user.email|truncatechars:15 }}</span>
+          <a class="btn btn-ghost" href="{% url 'logout' %}">Logout</a>
+        {% else %}
+          <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+          <a class="btn btn-ghost" href="{% url 'login' %}">Login</a>
+          <a class="btn btn-primary" href="{% url 'signup' %}">Register</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  {% block content %}
+
+  {% endblock %}
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>VirtualBroker</h4>
+          <p>The safe way to learn trading with real market feel and virtual cash.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <nav><a href="#features">Features</a><br><a href="#steps">How it Works</a><br><a href="#faq">FAQ</a></nav>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <nav><a href="#">About</a><br><a href="#">Contact</a><br><a href="#">Privacy Policy</a><br><a href="#">Terms of Service</a></nav>
+        </div>
+        <div>
+          <h4>Trust & Safety</h4>
+          <ul class="list-plain">
+            <li>✔ 100% Free to Try</li>
+            <li>✔ No Real Money Required</li>
+            <li>✔ No Credit Card Needed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <small>© <span id="year"></span> VirtualBroker</small>
+        <span>All names and logos are for demo purposes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Preserve scroll position when navigating
+    window.addEventListener('beforeunload', function() {
+      sessionStorage.setItem('scrollPosition', window.scrollY);
+      // Also preserve table scroll positions
+      const stocksTable = document.querySelector('#stocks-tile .table-scroll tbody');
+      const positionsTable = document.querySelector('#positions-tile .table-scroll tbody');
+      if (stocksTable) sessionStorage.setItem('stocksTableScroll', stocksTable.scrollTop);
+      if (positionsTable) sessionStorage.setItem('positionsTableScroll', positionsTable.scrollTop);
+    });
+    
+    // Set loading state initially if we have a scroll position to restore
+    if (sessionStorage.getItem('scrollPosition')) {
+      document.body.classList.add('loading');
+    }
+    
+    // Restore scroll immediately on DOMContentLoaded (before images load)
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollPosition = sessionStorage.getItem('scrollPosition');
+      if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition));
+        sessionStorage.removeItem('scrollPosition');
+        // Remove loading state after scroll is restored
+        setTimeout(() => {
+          document.body.classList.remove('loading');
+          document.body.classList.add('loaded');
+        }, 50);
+      } else {
+        document.body.classList.add('loaded');
+      }
+    });
+    
+    window.addEventListener('load', function() {
+      // Restore table scroll positions after everything is loaded
+      const stocksTable = document.querySelector('#stocks-tile .table-scroll tbody');
+      const positionsTable = document.querySelector('#positions-tile .table-scroll tbody');
+      const stocksScroll = sessionStorage.getItem('stocksTableScroll');
+      const positionsScroll = sessionStorage.getItem('positionsTableScroll');
+      
+      if (stocksTable && stocksScroll) {
+        stocksTable.scrollTop = parseInt(stocksScroll);
+        sessionStorage.removeItem('stocksTableScroll');
+      }
+      if (positionsTable && positionsScroll) {
+        positionsTable.scrollTop = parseInt(positionsScroll);
+        sessionStorage.removeItem('positionsTableScroll');
+      }
+    });
+    
+    // Quantity adjustment function
+    function adjustQuantity(section, change) {
+      const input = document.getElementById(section + '-quantity');
+      if (input) {
+        let currentValue = parseInt(input.value) || 1;
+        let newValue = currentValue + change;
+        if (newValue >= 1) {
+          input.value = newValue;
+        }
+      }
+    }
+    
+    // Trade modal functions
+    let currentTrade = {};
+    
+    // Test function to verify JavaScript is working
+    console.log('Trade modal JavaScript loaded successfully');
+    
+    function showTradeModal(action, symbol, section) {
+      console.log('showTradeModal called with:', { action, symbol, section });
+      const quantityInput = document.getElementById(section + '-quantity');
+      const quantity = quantityInput ? parseInt(quantityInput.value) || 1 : 1;
+      
+      currentTrade = { action, symbol, quantity, section };
+      console.log('currentTrade set to:', currentTrade);
+      
+      document.getElementById('modalTitle').textContent = `Confirm ${action.charAt(0).toUpperCase() + action.slice(1)}`;
+      document.getElementById('tradeAction').textContent = action.toUpperCase();
+      document.getElementById('tradeStock').textContent = symbol;
+      document.getElementById('tradeQuantity').textContent = quantity;
+      document.getElementById('tradeCost').textContent = 'Calculating...';
+      
+      const confirmBtn = document.getElementById('confirmTradeBtn');
+      confirmBtn.className = `btn ${action === 'buy' ? 'btn-success' : 'btn-danger'}`;
+      confirmBtn.textContent = `${action.charAt(0).toUpperCase() + action.slice(1)} ${symbol}`;
+      
+      document.getElementById('tradeModal').style.display = 'block';
+      
+      // Simulate price calculation (in real app, you'd fetch current price)
+      setTimeout(() => {
+        const estimatedPrice = Math.random() * 300 + 50; // Mock price
+        const totalCost = (estimatedPrice * quantity).toFixed(2);
+        document.getElementById('tradeCost').textContent = `$${totalCost}`;
+      }, 500);
+    }
+    
+    function closeTradeModal() {
+      document.getElementById('tradeModal').style.display = 'none';
+    }
+    
+    function confirmTrade() {
+      console.log('confirmTrade called with:', currentTrade);
+      const form = document.getElementById('hiddenTradeForm');
+      document.getElementById('hiddenQuantity').value = currentTrade.quantity;
+      
+      // Set source tile indicator
+      if (currentTrade.section === 'positions') {
+        document.getElementById('hiddenFromPositions').value = 'true';
+      } else {
+        document.getElementById('hiddenFromPositions').value = '';
+      }
+      
+      if (currentTrade.action === 'buy') {
+        document.getElementById('hiddenBuy').value = currentTrade.symbol;
+        document.getElementById('hiddenSell').value = '';
+        console.log('Setting buy field to:', currentTrade.symbol);
+      } else {
+        document.getElementById('hiddenSell').value = currentTrade.symbol;
+        document.getElementById('hiddenBuy').value = '';
+        console.log('Setting sell field to:', currentTrade.symbol);
+      }
+      
+      console.log('Form data before submit:', {
+        quantity: document.getElementById('hiddenQuantity').value,
+        buy: document.getElementById('hiddenBuy').value,
+        sell: document.getElementById('hiddenSell').value,
+        from_positions: document.getElementById('hiddenFromPositions').value
+      });
+      
+      form.submit();
+    }
+    
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('tradeModal');
+      if (event.target === modal) {
+        closeTradeModal();
+      }
+    }
+  </script>
+</body>
+</html>

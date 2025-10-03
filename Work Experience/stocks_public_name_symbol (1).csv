@@ -1,0 +1,959 @@
+name,symbol,is_public
+Walmart,WMT,True
+Amazon,AMZN,True
+Apple,AAPL,True
+UnitedHealth Group,UNH,True
+Berkshire Hathaway,BRKA,True
+CVS Health,CVS,True
+Exxon Mobil,XOM,True
+Alphabet,GOOGL,True
+McKesson,MCK,True
+Cencora,COR,True
+Costco Wholesale,COST,True
+JPMorgan Chase,JPM,True
+Microsoft,MSFT,True
+Cardinal Health,CAH,True
+Chevron,CVX,True
+Cigna,CI,True
+Ford Motor,F,True
+Bank of America,BAC,True
+General Motors,GM,True
+Elevance Health,ELV,True
+Citigroup,C,True
+Centene,CNC,True
+Home Depot,HD,True
+Marathon Petroleum,MPC,True
+Kroger,KR,True
+Phillips 66,PSX,True
+Fannie Mae,FNMA,True
+Walgreens Boots Alliance,WBA,True
+Valero Energy,VLO,True
+Meta Platforms,META,True
+Verizon Communications,VZ,True
+AT&T,T,True
+Comcast,CMCSA,True
+Wells Fargo,WFC,True
+Goldman Sachs Group,GS,True
+Freddie Mac,FMCC,True
+Target,TGT,True
+Humana,HUM,True
+Tesla,TSLA,True
+Morgan Stanley,MS,True
+Johnson & Johnson,JNJ,True
+Archer Daniels Midland,ADM,True
+PepsiCo,PEP,True
+United Parcel Service,UPS,True
+FedEx,FDX,True
+Walt Disney,DIS,True
+Dell Technologies,DELL,True
+Lowe's,LOW,True
+Procter & Gamble,PG,True
+Energy Transfer,ET,True
+Boeing,BA,True
+Albertsons,ACI,True
+Sysco,SYY,True
+RTX,RTX,True
+General Electric,GE,True
+Lockheed Martin,LMT,True
+American Express,AXP,True
+Caterpillar,CAT,True
+MetLife,MET,True
+HCA Healthcare,HCA,True
+Progressive,PGR,True
+IBM,IBM,True
+Deere,DE,True
+Nvidia,NVDA,True
+StoneX Group,SNEX,True
+Merck,MRK,True
+ConocoPhillips,COP,True
+Pfizer,PFE,True
+Delta Air Lines,DAL,True
+TD Synnex,SNX,True
+Allstate,ALL,True
+Cisco Systems,CSCO,True
+Charter Communications,CHTR,True
+AbbVie,ABBV,True
+Intel,INTC,True
+TJX,TJX,True
+Prudential Financial,PRU,True
+HP,HPQ,True
+United Airlines Holdings,UAL,True
+Performance Food Group,PFGC,True
+Tyson Foods,TSN,True
+American Airlines Group,AAL,True
+Nike,NKE,True
+Oracle,ORCL,True
+Enterprise Products Partners,EPD,True
+Capital One Financial,COF,True
+Plains GP Holdings,PAGP,True
+World Kinect,WKC,True
+AIG,AIG,True
+Coca-Cola,KO,True
+Bristol-Myers Squibb,BMY,True
+Dow,DOW,True
+Best Buy,BBY,True
+Thermo Fisher Scientific,TMO,True
+General Dynamics,GD,True
+Travelers,TRV,True
+Warner Bros. Discovery,WBD,True
+U.S. Bancorp,USB,True
+Abbott Laboratories,ABT,True
+Northrop Grumman,NOC,True
+Dollar General,DG,True
+PBF Energy,PBF,True
+Uber Technologies,UBER,True
+Honeywell International,HON,True
+Mondelez International,MDLZ,True
+Starbucks,SBUX,True
+Qualcomm,QCOM,True
+Broadcom,AVGO,True
+US Foods Holding,USFD,True
+D.R. Horton,DHI,True
+Philip Morris International,PM,True
+Paccar,PCAR,True
+Salesforce,CRM,True
+Nucor,NUE,True
+Jabil,JBL,True
+Lennar,LEN,True
+Eli Lilly,LLY,True
+Molina Healthcare,MOH,True
+Cummins,CMI,True
+Bank of New York Mellon,BK,True
+Netflix,NFLX,True
+Truist Financial,TFC,True
+Arrow Electronics,ARW,True
+3M,MMM,True
+Visa,V,True
+Apollo Global Management,APO,True
+HF Sinclair,DINO,True
+CBRE Group,CBRE,True
+PNC Financial Services Group,PNC,True
+Lithia Motors,LAD,True
+CarMax,KMX,True
+Paramount Global,PARA,True
+Dollar Tree,DLTR,True
+United Natural Foods,UNFI,True
+PayPal Holdings,PYPL,True
+Penske Automotive Group,PAG,True
+Hewlett Packard Enterprise,HPE,True
+Duke Energy,DUK,True
+Occidental Petroleum,OXY,True
+NRG Energy,NRG,True
+Amgen,AMGN,True
+NextEra Energy,NEE,True
+Danaher,DHR,True
+Gilead Sciences,GILD,True
+AutoNation,AN,True
+Kraft Heinz,KHC,True
+Avnet,AVT,True
+Applied Materials,AMAT,True
+Southwest Airlines,LUV,True
+Charles Schwab,SCHW,True
+Baker Hughes,BKR,True
+McDonald's,MCD,True
+Southern Company,SO,True
+Mastercard,MA,True
+Constellation Energy,CEG,True
+Hartford Financial Services Group,HIG,True
+PG&E,PCG,True
+Coupang,CPNG,True
+EOG Resources,EOG,True
+Union Pacific,UNP,True
+Rite Aid,RADCQ,True
+Macy's,M,True
+Marriott International,MAR,True
+Lear,LEA,True
+Genuine Parts,GPC,True
+Sherwin-Williams,SHW,True
+Halliburton,HAL,True
+Freeport-McMoRan,FCX,True
+Live Nation Entertainment,LYV,True
+Marsh & McLennan,MMC,True
+Advanced Micro Devices,AMD,True
+First Citizens BancShares,FCNCA,True
+WESCO International,WCC,True
+Carrier Global,CARR,True
+Cleveland-Cliffs,CLF,True
+Block,SQ,True
+Exelon,EXC,True
+KKR,KKR,True
+CDW,CDW,True
+Booking Holdings,BKNG,True
+Synchrony,SYF,True
+Quanta Services,PWR,True
+Jones Lang LaSalle,JLL,True
+Discover Financial Services,DFS,True
+Tenet Healthcare,THC,True
+Altria Group,MO,True
+Stryker,SYK,True
+Kimberly-Clark,KMB,True
+Waste Management,WM,True
+Cheniere Energy,LNG,True
+Ross Stores,ROST,True
+General Mills,GIS,True
+Goodyear Tire & Rubber,GT,True
+BJ's Wholesale Club,BJ,True
+GE HealthCare Technologies,GEHC,True
+Colgate-Palmolive,CL,True
+Whirlpool,WHR,True
+L3Harris Technologies,LHX,True
+Adobe,ADBE,True
+Becton Dickinson,BDX,True
+Pioneer Natural Resources,PXD,True
+Cognizant Technology Solutions,CTSH,True
+Murphy USA,MUSA,True
+Fiserv,FI,True
+Parker-Hannifin,PH,True
+American Electric Power,AEP,True
+International Paper,IP,True
+ManpowerGroup,MAN,True
+Aramark,ARMK,True
+Steel Dynamics,STLD,True
+Aflac,AFL,True
+Reinsurance Group of America,RGA,True
+Emerson Electric,EMR,True
+State Street,STT,True
+PPG Industries,PPG,True
+United States Steel,X,True
+Automatic Data Processing,ADP,True
+Group 1 Automotive,GPI,True
+Dominion Energy,D,True
+BlackRock,BLK,True
+Oneok,OKE,True
+C.H. Robinson Worldwide,CHRW,True
+Texas Instruments,TXN,True
+Kohl's,KSS,True
+AutoZone,AZO,True
+Lam Research,LRCX,True
+Corteva,CTVA,True
+Builders FirstSource,BLDR,True
+Kyndryl Holdings,KD,True
+EchoStar,SATS,True
+Delek US Holdings,DK,True
+Sempra,SRE,True
+Global Partners,GLP,True
+Grainger,GWW,True
+Jacobs Solutions,J,True
+Edison International,EIX,True
+MGM Resorts International,MGM,True
+Illinois Tool Works,ITW,True
+Ameriprise Financial,AMP,True
+PulteGroup,PHM,True
+Targa Resources,TRGP,True
+Ally Financial,ALLY,True
+BorgWarner,BWA,True
+Estée Lauder,EL,True
+Loews,L,True
+O'Reilly Automotive,ORLY,True
+Markel Group,MKL,True
+Stanley Black & Decker,SWK,True
+Micron Technology,MU,True
+Fluor,FLR,True
+Leidos Holdings,LDOS,True
+Viatris,VTRS,True
+Kinder Morgan,KMI,True
+Ecolab,ECL,True
+Baxter International,BAX,True
+Devon Energy,DVN,True
+Kellanova,K,True
+Casey's General Stores,CASY,True
+IQVIA Holdings,IQV,True
+Republic Services,RSG,True
+Fox,FOXA,True
+Gap,GPS,True
+Keurig Dr Pepper,KDP,True
+Reliance,RS,True
+Asbury Automotive Group,ABG,True
+Vistra,VST,True
+Andersons,ANDE,True
+Nordstrom,JWN,True
+Omnicom Group,OMC,True
+Fidelity National Information Services,FIS,True
+Consolidated Edison,ED,True
+CSX,CSX,True
+AECOM,ACM,True
+Lumen Technologies,LUMN,True
+Tractor Supply,TSCO,True
+DXC Technology,DXC,True
+AGCO,AGCO,True
+Sonic Automotive,SAH,True
+Intuit,INTU,True
+United Rentals,URI,True
+Universal Health Services,UHS,True
+Boston Scientific,BSX,True
+Otis Worldwide,OTIS,True
+Xcel Energy,XEL,True
+Ball,BALL,True
+LKQ,LKQ,True
+Mosaic,MOS,True
+Textron,TXT,True
+Labcorp Holdings,LH,True
+Principal Financial,PFG,True
+Regeneron Pharmaceuticals,REGN,True
+Raymond James Financial,RJF,True
+Dick's Sporting Goods,DKS,True
+Expedia Group,EXPE,True
+J.B. Hunt Transport Services,JBHT,True
+M&T Bank,MTB,True
+DTE Energy,DTE,True
+AES,AES,True
+Berry Global Group,BERY,True
+Fifth Third Bancorp,FITB,True
+Air Products & Chemicals,APD,True
+Corning,GLW,True
+EMCOR Group,EME,True
+Amphenol,APH,True
+Westlake,WLK,True
+DuPont,DD,True
+Liberty Media,LSXMA,True
+S&P Global,SPGI,True
+Community Health Systems,CYH,True
+FirstEnergy,FE,True
+Unum Group,UNM,True
+Henry Schein,HSIC,True
+Western Digital,WDC,True
+Analog Devices,ADI,True
+Conagra Brands,CAG,True
+Citizens Financial Group,CFG,True
+Norfolk Southern,NSC,True
+Entergy,ETR,True
+W.R. Berkley,WRB,True
+DaVita,DVA,True
+Northern Trust,NTRS,True
+Hormel Foods,HRL,True
+Crown Holdings,CCK,True
+Avis Budget Group,CAR,True
+Wayfair,W,True
+MasTec,MTZ,True
+Eversource Energy,ES,True
+Newmont,NEM,True
+Ryder System,R,True
+Fidelity National Financial,FNF,True
+Molson Coors Beverage,TAP,True
+Caesars Entertainment,CZR,True
+Lincoln National,LNC,True
+VF,VFC,True
+International Flavors & Fragrances,IFF,True
+Huntington Ingalls Industries,HII,True
+Advance Auto Parts,AAP,True
+Public Service Enterprise Group,PEG,True
+Ulta Beauty,ULTA,True
+Hershey,HSY,True
+Chewy,CHWY,True
+American Tower,AMT,True
+Mohawk Industries,MHK,True
+Assurant,AIZ,True
+Thor Industries,THO,True
+Yum China Holdings,YUMC,True
+Celanese,CE,True
+Qurate Retail,QRTEA,True
+Williams,WMB,True
+Interpublic Group,IPG,True
+Ovintiv,OVV,True
+Icahn Enterprises,IEP,True
+Huntington Bancshares,HBAN,True
+Carvana,CVNA,True
+Hess,HES,True
+Dana,DAN,True
+Alcoa,AA,True
+Equitable Holdings,EQH,True
+KLA,KLAC,True
+Darden Restaurants,DRI,True
+Autoliv,ALV,True
+Alaska Air Group,ALK,True
+KeyCorp,KEY,True
+Las Vegas Sands,LVS,True
+Owens & Minor,OMI,True
+Hilton Worldwide Holdings,HLT,True
+Ebay,EBAY,True
+Arthur J. Gallagher,AJG,True
+LPL Financial Holdings,LPLA,True
+Cincinnati Financial,CINF,True
+Toll Brothers,TOL,True
+Motorola Solutions,MSI,True
+Airbnb,ABNB,True
+Intercontinental Exchange,ICE,True
+News Corp.,NWSA,True
+Chipotle Mexican Grill,CMG,True
+Vertex Pharmaceuticals,VRTX,True
+Biogen,BIIB,True
+GXO Logistics,GXO,True
+SpartanNash,SPTN,True
+Burlington Stores,BURL,True
+NVR,NVR,True
+Owens Corning,OC,True
+Westinghouse Air Brake Technologies,WAB,True
+Oshkosh,OSK,True
+Global Payments,GPN,True
+Lululemon athletica,LULU,True
+Albemarle,ALB,True
+JetBlue Airways,JBLU,True
+Seaboard,SEB,True
+Constellation Brands,STZ,True
+Graphic Packaging Holding,GPK,True
+Hertz Global Holdings,HTZ,True
+Campbell Soup,CPB,True
+Expeditors Intl. of Washington,EXPD,True
+A-Mark Precious Metals,AMRK,True
+Booz Allen Hamilton Holding,BAH,True
+Quest Diagnostics,DGX,True
+Altice USA,ATUS,True
+PVH,PVH,True
+Eastman Chemical,EMN,True
+Insight Enterprises,NSIT,True
+Regions Financial,RF,True
+Beacon Roofing Supply,BECN,True
+Rockwell Automation,ROK,True
+Polaris,PII,True
+ServiceNow,NOW,True
+Sanmina,SANM,True
+UGI,UGI,True
+WEC Energy Group,WEC,True
+BrightSpring Health Services,BGST,True
+Cintas,CTAS,True
+Commercial Metals,CMC,True
+Continental Resources,CLR,True
+Chesapeake Energy,CHK,True
+CenterPoint Energy,CNP,True
+NGL Energy Partners,NGL,True
+DoorDash,DASH,True
+NOV,NOV,True
+Zoetis,ZTS,True
+J.M. Smucker,SJM,True
+Microchip Technology,MCHP,True
+Dover,DOV,True
+Diamondback Energy,FANG,True
+Avery Dennison,AVY,True
+PPL,PPL,True
+ON Semiconductor,ON,True
+ARKO,ARKO,True
+Par Pacific Holdings,PARR,True
+APA,APA,True
+Equinix,EQIX,True
+New York Community Bancorp,NYCB,True
+Foot Locker,FL,True
+Ingredion,INGR,True
+Newell Brands,NWL,True
+ABM Industries,ABM,True
+Prologis,PLD,True
+Blackstone,BX,True
+Skechers U.S.A.,SKX,True
+Masco,MAS,True
+Rush Enterprises,RUSHB,True
+Franklin Resources,BEN,True
+ODP,ODP,True
+American Financial Group,AFG,True
+Packaging Corp. of America,PKG,True
+Vulcan Materials,VMC,True
+Interactive Brokers Group,IBKR,True
+Williams-Sonoma,WSM,True
+XPO,XPO,True
+Weyerhaeuser,WY,True
+Genworth Financial,GNW,True
+CMS Energy,CMS,True
+Science Applications International,SAIC,True
+Jefferies Financial Group,JEF,True
+Bath & Body Works,BBWI,True
+Electronic Arts,EA,True
+Taylor Morrison Home,TMHC,True
+Zimmer Biomet Holdings,ZBH,True
+Clorox,CLX,True
+Xylem,XYL,True
+Voya Financial,VOYA,True
+Fastenal,FAST,True
+Watsco,WSO,True
+Workday,WDAY,True
+Old Republic International,ORI,True
+RPM International,RPM,True
+UFP Industries,UFPI,True
+Ameren,AEE,True
+Knight-Swift Transportation Hldgs.,KNX,True
+Monster Beverage,MNST,True
+Intuitive Surgical,ISRG,True
+Super Micro Computer,SMCI,True
+Concentrix,CNXC,True
+O-I Glass,OI,True
+Yum Brands,YUM,True
+CommScope Holding,COMM,True
+Post Holdings,POST,True
+Crown Castle,CCI,True
+Avantor,AVTR,True
+KBR,KBR,True
+Opendoor Technologies,OPEN,True
+APi Group,APG,True
+EQT,EQT,True
+EnLink Midstream,ENLC,True
+Palo Alto Networks,PANW,True
+Xerox Holdings,XRX,True
+Ingersoll Rand,IR,True
+Dillard's,DDS,True
+Martin Marietta Materials,MLM,True
+Vertiv Holdings,VRT,True
+Moderna,MRNA,True
+Boise Cascade,BCC,True
+Sprouts Farmers Market,SFM,True
+Agilent Technologies,A,True
+Olin,OLN,True
+Darling Ingredients,DAR,True
+Sonoco Products,SON,True
+CACI International,CACI,True
+Core & Main,CNM,True
+Marathon Oil,MRO,True
+Hyatt Hotels,H,True
+Select Medical Holdings,SEM,True
+McCormick,MKC,True
+Tapestry,TPR,True
+Coca-Cola Consolidated,COKE,True
+Howmet Aerospace,HWM,True
+Welltower,WELL,True
+CF Industries Holdings,CF,True
+Ametek,AME,True
+TransDigm Group,TDG,True
+Wynn Resorts,WYNN,True
+Southwestern Energy,SWN,True
+Amkor Technology,AMKR,True
+Insperity,NSP,True
+Patterson,PDCO,True
+T. Rowe Price,TROW,True
+Ralph Lauren,RL,True
+KB Home,KBH,True
+Brunswick,BC,True
+Robert Half,RHI,True
+PENN Entertainment,PENN,True
+NetApp,NTAP,True
+Organon,OGN,True
+Petco Health and Wellness,WOOF,True
+Regal Rexnord,RRX,True
+Resideo Technologies,REZI,True
+Camping World Holdings,CWH,True
+Huntsman,HUN,True
+Victoria's Secret,VSCO,True
+Levi Strauss,LEVI,True
+Roper Technologies,ROP,True
+Academy Sports and Outdoors,ASO,True
+Meritage Homes,MTH,True
+American Axle & Manufacturing,AXL,True
+Fortive,FTV,True
+Nasdaq,NDAQ,True
+Broadridge Financial Solutions,BR,True
+Spirit AeroSystems Holdings,SPR,True
+Warner Music Group,WMG,True
+Chemours,CC,True
+ADT,ADT,True
+Edwards Lifesciences,EW,True
+First American Financial,FAF,True
+Hanover Insurance Group,THG,True
+Silgan Holdings,SLGN,True
+Endeavor Group Holdings,EDR,True
+Moody's,MCO,True
+Coterra Energy,CTRA,True
+Gartner,IT,True
+Under Armour,UAA,True
+Ingles Markets,IMKTA,True
+Church & Dwight,CHD,True
+Old Dominion Freight Line,ODFL,True
+U-Haul Holding,UHAL,True
+Oscar Health,OSCR,True
+Arista Networks,ANET,True
+Synopsys,SNPS,True
+Harley-Davidson,HOG,True
+Frontier Communications,FYBR,True
+Primoris Services,PRIM,True
+Carlisle,CSL,True
+Simon Property Group,SPG,True
+Hanesbrands,HBI,True
+Anywhere Real Estate,HOUS,True
+Teledyne Technologies,TDY,True
+CME Group,CME,True
+Juniper Networks,JNPR,True
+Coty,COTY,True
+Pool,POOL,True
+Evergy,EVRG,True
+Marvell Technology,MRVL,True
+NiSource,NI,True
+SS&C Technologies Holdings,SSNC,True
+Schneider National,SNDR,True
+Autodesk,ADSK,True
+Sealed Air,SEE,True
+Iron Mountain,IRM,True
+Digital Realty Trust,DLR,True
+Keysight Technologies,KEYS,True
+Globe Life,GL,True
+Parsons,PSN,True
+Mattel,MAT,True
+Southwest Gas Holdings,SWX,True
+Clean Harbors,CLH,True
+Hubbell,HUBB,True
+Spirit Airlines,SAVE,True
+Lamb Weston Holdings,LW,True
+Take-Two Interactive Software,TTWO,True
+GMS,GMS,True
+Landstar System,LSTR,True
+Host Hotels & Resorts,HST,True
+Fortinet,FTNT,True
+OneMain Holdings,OMF,True
+GameStop,GME,True
+Equifax,EFX,True
+American Eagle Outfitters,AEO,True
+Comerica,CMA,True
+Greif,GEF,True
+Comfort Systems USA,FIX,True
+TopBuild,BLD,True
+Bread Financial Holdings,BFH,True
+Coherent,COHR,True
+Telephone & Data Systems,TDS,True
+Stifel Financial,SF,True
+Urban Outfitters,URBN,True
+Terex,TEX,True
+Ryerson Holding,RYI,True
+Snap-on,SNA,True
+Flowers Foods,FLO,True
+First Horizon,FHN,True
+Paychex,PAYX,True
+Hasbro,HAS,True
+Ares Management,ARES,True
+Lennox International,LII,True
+Peabody Energy,BTU,True
+Kemper,KMPR,True
+Nexstar Media Group,NXST,True
+Tempur Sealy International,TPX,True
+TriNet Group,TNET,True
+Worthington Enterprises,WOR,True
+Maximus,MMS,True
+Compass,COMP,True
+Brink's,BCO,True
+Kelly Services,KELYA,True
+Navient,NAVI,True
+AMC Entertainment Holdings,AMC,True
+Encompass Health,EHC,True
+Skyworks Solutions,SWKS,True
+Timken,TKR,True
+Liberty Energy,LBRT,True
+Marriott Vacations Worldwide,VAC,True
+Leggett & Platt,LEG,True
+Big Lots,BIG,True
+Weis Markets,WMK,True
+Pinnacle West Capital,PNW,True
+EPAM Systems,EPAM,True
+Antero Resources,AR,True
+Bloomin' Brands,BLMN,True
+MDU Resources Group,MDU,True
+Texas Roadhouse,TXRH,True
+Mercury General,MCY,True
+Fortune Brands Innovations,FBIN,True
+Zions Bancorp.,ZION,True
+JELD-WEN Holding,JELD,True
+Snap,SNAP,True
+Zebra Technologies,ZBRA,True
+Agilon Health,AGL,True
+Toro,TTC,True
+Zoom Video Communications,ZM,True
+Tetra Tech,TTEK,True
+Public Storage,PSA,True
+Illumina,ILMN,True
+Ventas,VTR,True
+FMC,FMC,True
+ArcBest,ARCB,True
+Domino's Pizza,DPZ,True
+ASGN,ASGN,True
+Rivian Automotive,RIVN,True
+Elanco Animal Health,ELAN,True
+Graham Holdings,GHC,True
+Floor & Decor Holdings,FND,True
+Applied Industrial Technologies,AIT,True
+PriceSmart,PSMT,True
+Lyft,LYFT,True
+Ciena,CIEN,True
+IAC,IAC,True
+Western Union,WU,True
+Flowserve,FLS,True
+Western Alliance Bancorp.,WAL,True
+Option Care Health,OPCH,True
+SiteOne Landscape Supply,SITE,True
+Topgolf Callaway Brands,MODG,True
+eXp World Holdings,EXPI,True
+Abercrombie & Fitch,ANF,True
+Atmos Energy,ATO,True
+Catalent,CTLT,True
+Brown & Brown,BRO,True
+GoDaddy,GDDY,True
+American Water Works,AWK,True
+Selective Insurance Group,SIGI,True
+Brown-Forman,BF.B,True
+Advantage Solutions,ADV,True
+ResMed,RMD,True
+Plexus,PLXS,True
+Hub Group,HUBG,True
+Lincoln Electric Holdings,LECO,True
+NCR Atleos,NATL,True
+Calumet,CLMT,True
+Dycom Industries,DY,True
+Valmont Industries,VMI,True
+ATI,ATI,True
+Twilio,TWLO,True
+CNO Financial Group,CNO,True
+Patterson-UTI Energy,PTEN,True
+Brinker International,EAT,True
+Charles River Laboratories International,CRL,True
+Hyster-Yale,HY,True
+Brighthouse Financial,BHF,True
+Service Corp. International,SCI,True
+CrossAmerica Partners,CAPL,True
+Cadence,CDNS,True
+MillerKnoll,MLKN,True
+Realty Income,O,True
+Middleby,MIDD,True
+M/I Homes,MHO,True
+Hologic,HOLX,True
+Alliant Energy,LNT,True
+Generac Holdings,GNRC,True
+MSC Industrial Direct,MSM,True
+Rocket Companies,RKT,True
+Upbound Group,UPBD,True
+East West Bancorp,EWBC,True
+Hilton Grand Vacations,HGV,True
+Grocery Outlet Holding,GO,True
+Dentsply Sirona,XRAY,True
+V2X,VVX,True
+Crocs,CROX,True
+Spectrum Brands Holdings,SPB,True
+Visteon,VC,True
+Acuity Brands,AYI,True
+Greenbrier,GBX,True
+Webster Financial,WBS,True
+Cabot,CBT,True
+RXO,RXO,True
+Chord Energy,CHRD,True
+Popular,BPOP,True
+Garrett Motion,GTX,True
+Tutor Perini,TPC,True
+Copart,CPRT,True
+Toast,TOST,True
+Align Technology,ALGN,True
+A.O. Smith,AOS,True
+TransUnion,TRU,True
+NCR Voyix,VYX,True
+Akamai Technologies,AKAM,True
+Trimble,TRMB,True
+AMN Healthcare Services,AMN,True
+Mettler-Toledo International,MTD,True
+ScanSource,SCSC,True
+LCI Industries,LCII,True
+Cboe Global Markets,CBOE,True
+Diebold Nixdorf,DBD,True
+ChampionX,CHX,True
+Corpay,CPAY,True
+iHeartMedia,IHRT,True
+Travel + Leisure,TNL,True
+Dream Finders Homes,DFH,True
+Boyd Gaming,BYD,True
+Ensign Group,ENSG,True
+Sally Beauty Holdings,SBH,True
+Conduent,CNDT,True
+Sylvamo,SLVM,True
+Tri Pointe Homes,TPH,True
+EnerSys,ENS,True
+Incyte,INCY,True
+Century Communities,CCS,True
+Rithm Capital,RITM,True
+Euronet Worldwide,EEFT,True
+Hawaiian Electric Industries,HE,True
+DraftKings,DKNG,True
+IDEXX Laboratories,IDXX,True
+MYR Group,MYRG,True
+Deckers Outdoor,DECK,True
+DexCom,DXCM,True
+MKS Instruments,MKSI,True
+VICI Properties,VICI,True
+Cooper Cos.,COO,True
+Frontier Group Holdings,ULCC,True
+Qorvo,QRVO,True
+Five Below,FIVE,True
+TreeHouse Foods,THS,True
+Scotts Miracle-Gro,SMG,True
+Atlassian,TEAM,True
+Entegris,ENTG,True
+Atkore,ATKR,True
+H.B. Fuller,FUL,True
+Granite Construction,GVA,True
+Winnebago Industries,WGO,True
+FTI Consulting,FCN,True
+AptarGroup,ATR,True
+Columbia Sportswear,COLM,True
+Roku,ROKU,True
+Civitas Resources,CIVI,True
+H&R Block,HRB,True
+Alpha Metallurgical Resources,AMR,True
+Patrick Industries,PATK,True
+Murphy Oil,MUR,True
+Synovus Financial,SNV,True
+Cracker Barrel Old Country Store,CBRL,True
+Cheesecake Factory,CAKE,True
+CNX Resources,CNX,True
+Chefs' Warehouse,CHEF,True
+Donaldson,DCI,True
+Mueller Industries,MLI,True
+MRC Global,MRC,True
+Chart Industries,GTLS,True
+Alight,ALIT,True
+Vishay Intertechnology,VSH,True
+Range Resources,RRC,True
+Valley National Bancorp,VLY,True
+Match Group,MTCH,True
+Gen Digital,GEN,True
+Wintrust Financial,WTFC,True
+Moog,MOG.A,True
+First Solar,FSLR,True
+Central Garden & Pet,CENT,True
+Green Plains,GPRE,True
+Werner Enterprises,WERN,True
+AppLovin,APP,True
+ITT,ITT,True
+Herc Holdings,HRI,True
+Gray Television,GTN,True
+IDEX,IEX,True
+Boston Properties,BXP,True
+Pitney Bowes,PBI,True
+Steelcase,SCS,True
+Sun Communities,SUI,True
+AdaptHealth,AHCO,True
+Vertex Energy,VTNR,True
+Genesis Energy,GEL,True
+Jackson Financial,JXN,True
+FirstCash Holdings,FCFS,True
+Cal-Maine Foods,CALM,True
+Arch Resources,ARCH,True
+Avient,AVNT,True
+BlueLinx Holdings,BXC,True
+Sinclair,SBGI,True
+BOK Financial,BOKF,True
+Permian Resources,PR,True
+PACS Group,PACS,True
+Coinbase Global,COIN,True
+Western Midstream Partners,WES,True
+G-III Apparel Group,GIII,True
+Vontier,VNT,True
+Matson,MATX,True
+Kirby,KEX,True
+Kaiser Aluminum,KALU,True
+Vista Outdoor,VSTO,True
+Designer Brands,DBI,True
+Rollins,ROL,True
+Advanced Drainage Systems,WMS,True
+Cinemark Holdings,CNK,True
+CrowdStrike,CRWD,True
+Pinterest,PINS,True
+Instacart,CART,True
+Hillenbrand,HI,True
+Allison Transmission Holdings,ALSN,True
+RH,RH,True
+Brookdale Senior Living,BKD,True
+QuidelOrtho,QDEL,True
+Trinity Industries,TRN,True
+Teleflex,TFX,True
+HEICO,HEI,True
+Bruker,BRKR,True
+Carlyle Group,CG,True
+Energizer Holdings,ENR,True
+Quad/Graphics,QUAD,True
+Rackspace Technology,RXT,True
+Waters,WAT,True
+West Pharmaceutical Services,WST,True
+Carter's,CRI,True
+NeueHealth,NEUE,True
+SkyWest,SKYW,True
+Acadia Healthcare,ACHC,True
+Revvity,RVTY,True
+Portland General Electric,POR,True
+Woodward,WWD,True
+TEGNA,TGNA,True
+Sabre,SABR,True
+Light & Wonder,LNW,True
+Vail Resorts,MTN,True
+Radius Recycling,RDUS,True
+PennyMac Financial Services,PFSI,True
+Saia,SAIA,True
+Equity Residential,EQR,True
+Helmerich & Payne,HP,True
+Korn Ferry,KFY,True
+PC Connection,CNXN,True
+Curtiss-Wright,CW,True
+SLM,SLM,True
+Benchmark Electronics,BHE,True
+American National Group,AEL,True
+Pure Storage,PSTG,True
+Knife River,KNF,True
+Caleres,CAL,True
+BrightView Holdings,BV,True
+Cooper-Standard Holdings,CPS,True
+Primerica,PRI,True
+F5,FFIV,True
+Matador Resources,MTDR,True
+Snowflake,SNOW,True
+Viasat,VSAT,True
+California Resources,CRC,True
+Peloton Interactive,PTON,True
+Roblox,RBLX,True
+Installed Building Products,IBP,True
+First National of Nebraska,FINN,True
+Guess,GES,True
+ESAB,ESAB,True
+AvalonBay Communities,AVB,True
+DocuSign,DOCU,True
+Titan Machinery,TITN,True
+ModivCare,MODV,True
+Hovnanian Enterprises,HOV,True
+Etsy,ETSY,True
+Adams Resources & Energy,AE,True
+Surgery Partners,SGRY,True
+Columbia Banking System,COLB,True
+Verisk,VRSK,True
+MasterBrand,MBC,True
+Hawaiian Holdings,HA,True
+AMC Networks,AMCX,True
+SBA Communications,SBAC,True
+Americold Realty Trust,COLD,True
+NewMarket,NEU,True
+Park Hotels & Resorts,PK,True
+Alexandria Real Estate Equities,ARE,True
+Griffon,GFF,True
+Air Lease,AL,True
+UL Solutions,ULS,True
+Teradyne,TER,True
+OGE Energy,OGE,True
+Bio-Rad Laboratories,BIO,True
+Spire,SR,True
+Gannett,GCI,True
+Stericycle,SRCL,True
+Cullen/Frost Bankers,CFR,True
+Extra Space Storage,EXR,True
+REV Group,REVG,True
+ProFrac Holding,ACDC,True
+Nordson,NDSN,True
+Summit Materials,SUM,True
+Valvoline,VVV,True
+Kontoor Brands,KTB,True
+Skyline Champion,SKY,True
+Teladoc Health,TDOC,True
+Louisiana-Pacific,LPX,True
+Universal,UVV,True
+Consol Energy,CEIX,True
+Playtika Holding,PLTK,True
+Alliance Resource Partners,ARLP,True
+Envista Holdings,NVST,True
+Shift4 Payments,FOUR,True
+Talen Energy,TLNE,True
+Carpenter Technology,CRS,True
+WEX,WEX,True
+Old National Bancorp,ONB,True
+AGNC Investment,AGNC,True
+Wabash National,WNC,True
+MSCI,MSCI,True
+Stagwell,STGW,True
+Mativ Holdings,MATV,True
+Belden,BDC,True
+Allegiant Travel,ALGT,True
+Dropbox,DBX,True
+Exact Sciences,EXAS,True
+BWX Technologies,BWXT,True
+Clear Channel Outdoor Hldgs.,CCO,True
